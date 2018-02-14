@@ -1,0 +1,26 @@
+{
+   "manifest_version": 2,
+   "name": "Adaptive",
+   "homepage_url": "https://adaptive.org.uk",
+   "description": "Let's you customise the web",
+   "version": "0.1",
+
+   "content_scripts": [{
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["inject.js"]
+   }],
+   
+   "browser_action": {
+      "default_title": "Adaptive"
+   },
+
+   "background": {
+      "scripts": ["background.js"]
+   },
+   
+   "permissions": [
+      "https://*/*",
+      "http://*/*",
+      "tabs"
+   ]
+}
