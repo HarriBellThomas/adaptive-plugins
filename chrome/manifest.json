@@ -1,6 +1,7 @@
 {
    "manifest_version": 2,
    "name": "Adaptive",
+   "author": "The Adaptive Team",
    "homepage_url": "https://adaptive.org.uk",
    "description": "Let's you customise the web",
    "version": "0.1",
@@ -15,7 +16,8 @@
    },
 
    "background": {
-      "scripts": ["background.js"]
+      "scripts": ["background.js"],
+      "persistent": false
    },
    
    "permissions": [
