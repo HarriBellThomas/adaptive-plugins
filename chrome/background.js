@@ -1,4 +1,4 @@
-var browserObject = !(!!document.documentMode) && !!window.StyleMedia ?    // If we have Edge 20+
+var browserObject = window.navigator.userAgent.indexOf("Edge") != -1 ?   // If we have Edge
                     browser : chrome; 
 
 browserObject.browserAction.onClicked.addListener(function() {
