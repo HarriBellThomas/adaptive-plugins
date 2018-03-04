@@ -1,9 +1,8 @@
 window.onload = function() {
    // Inject the script
-   document.body.appendChild(function() {
-      (k = document.createElement('script')).src = 'https://js.adaptive.org.uk/fresh/?negateglobal=N&mod=onDOMChange,adaptiveBase,adaptiveTools,linkHighlighter,init';
-      return k;
-   }());
+   var adaptiveScript = document.createElement("script");
+   adaptiveScript.src = "https://js.adaptive.org.uk/fresh/?negateglobal=N&mod=onDOMChange,adaptiveBase,adaptiveTools,linkHighlighter,motorFeatures,speedBar,typeWarning,colourTools,passwordReveal,darkMode,magnifier,showMouse,init";
+   document.body.appendChild(adaptiveScript);
    
    if (window.location.hash) {
       try {
