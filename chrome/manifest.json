@@ -3,8 +3,14 @@
    "name": "Adaptive",
    "author": "The Adaptive Team",
    "homepage_url": "https://adaptive.org.uk",
-   "description": "Lets you customise the web",
+   "description": "The internet is an amazing place, yet not everyone currently feels at home here.
+Let's change that.",
    "version": "0.1",
+   "icons": {
+       "16": "icon.png",
+       "48": "icon.png",
+      "128": "icon.png"
+    },
 
    "content_scripts": [{
       "matches": ["https://*/*", "http://*/*"],
