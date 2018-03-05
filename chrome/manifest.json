@@ -23,14 +23,14 @@ Let's change that.",
 
    "background": {
       "scripts": ["background.js"],
-      "persistent": false
+      "persistent": true
    },
 
    "permissions": [
+      "cookies",
       "https://*/*",
       "http://*/*",
       "tabs",
-      "cookies",
       "storage"
    ]
 }
