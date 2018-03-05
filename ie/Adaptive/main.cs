@@ -48,7 +48,7 @@ namespace Adaptive {
          IHTMLElement head = (IHTMLElement)((IHTMLElementCollection) document.all.tags("head")).item(null, 0);
          IHTMLScriptElement adaptiveScript = (IHTMLScriptElement) document.createElement("script");
          adaptiveScript.type = @"text/javascript";
-         adaptiveScript.src = "https://js.adaptive.org.uk/fresh/?negateglobal=N&mod=onDOMChange,adaptiveBase,adaptiveTools,linkHighlighter,motorFeatures,speedBar,typeWarning,colourTools,passwordReveal,darkMode,magnifier,showMouse,init";
+         adaptiveScript.src = "https://js.adaptive.org.uk/adaptive.js";
          ((HTMLHeadElement) head).appendChild((IHTMLDOMNode) adaptiveScript);
       }
       
