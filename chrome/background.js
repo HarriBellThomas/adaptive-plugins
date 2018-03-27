@@ -6,5 +6,5 @@ browserObject.browserAction.onClicked.addListener(function() {
    browserObject.storage.local.get('ADAPTIVE_ENABLE', function(result) {
        if(result.ADAPTIVE_ENABLE == 1) browserObject.storage.local.set({"ADAPTIVE_ENABLE": 0});
        else browserObject.storage.local.set({"ADAPTIVE_ENABLE": 1});
-   }
+   });
 });
